@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table, tr, th{
+            border: 1px solid black;
+        }
+        td{
+            border: 1px solid black;
+        }
+        table{
+            height: 100%;
+            width: 100%;
+            align-content: center;
+        }
+        .umumiy{
+            display: flex;
+        }
+        .fi{
+            flex: 1;
+            height: 300px;
+        }
+        
+    </style>
+    <title>Uy ishi</title>
+</head>
+<body> 
+    <div class="umumiy">
+    <div class="fi"></div>
+    <div class="fi">
+        
+    <table>
+        <tr>
+            <th>
+                I.F.Sh
+                <td title="Namuna: Raimkulov Lazizbek Xasan o'g'li">
+                    <input type="text" id="inpName"> <br>
+                </td>
+            </th>
+        </tr>
+
+        <tr>
+            <th>
+                email
+            </th>
+            <td title="Namuna: raimqulovlaziz745@gmail.com">
+                <input type="text" id="inpEmail" placeholder="...@gmail.com"> <br>
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                password
+            </th>
+            <td title="Kod 8ta belgidan kam bo'lmasin. Hamda harf va sondan tashkil topgan bulsin">
+                <input type="password" id="inpPass" style="display: inline;">
+                <button onclick="kuz()">👁️‍🗨️</button>
+                <br>
+            </td>
+        </tr>
+
+        <tr>
+            <th>
+                confirm the password
+            </th>
+            <td>
+                <input type="password" id="inpConPass" title="Kodni yana kiriting" style="display: inline;">
+                <button onclick="kuz1()">👁️‍🗨️</button> <br>
+                <button class="junat" onclick="junat()" style="margin-top: 20px; margin-left: 200px;">Jo'natish</button>
+            </td>
+        </tr>
+    </table>
+
+</div>
+<div class="fi"></div>
+</div>
+
+
+    <br><br><br><br>
+
+
+    <table>
+        <thead>
+            <tr>
+                <th class="qabul1">
+                    №
+                </th>
+                <th class="qabul2">
+                    I.F.SH
+                </th>
+                <th class="qabul3">
+                    e-mail
+                </th>
+                <th class="qabul4">
+                    password
+                </th>
+            </tr>
+        </thead>
+
+        <tbody  id="tbQush">
+
+        </tbody>
+
+    </table>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
